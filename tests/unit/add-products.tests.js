@@ -24,7 +24,7 @@ suite('Add Products page', function() {
 
   test('Add valid product', async function() {
     let res = await fetch(
-      "http://localhost:8888/Add-Product",
+      "http://localhost:8888/add-product",
       {
         method: 'POST',
         headers: {
@@ -41,7 +41,7 @@ suite('Add Products page', function() {
 
   test('Add invalid product', async function() {
      let res = await fetch(
-      "http://localhost:8888/Add-Product",
+      "http://localhost:8888/add-product",
       {
         method: 'POST',
         headers: {
