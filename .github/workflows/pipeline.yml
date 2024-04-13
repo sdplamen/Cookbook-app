@@ -22,8 +22,6 @@ jobs:
     - name: install npm dependencies
       run: npm install
     - name: Run Unit tests
-      run: npm run test
-    - name: install npm dependencies
-      run: npm install
+      run: npm run test:unit
     - name: Display softuni username
       run: echo "sdplamen"
