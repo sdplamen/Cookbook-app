@@ -54,9 +54,9 @@ suite('Add Products page', function() {
     let errMsg = body.includes("Cannot add product. Name and quantity fields are required!");
     assert.ok(errMsg, "Add invalid product should display an error message");
 
-    res = await fetch("http://localhost:8888/Add-Product/");
+    res = await fetch("http://localhost:8888/");
     body = await res.text();
-	  assert.ok(body.includes("Cookbook"), 
+	  assert.ok(body.includes("Cookbook: <b>3</b>"), 
 		"Add invalid product should not change the products count");
   });
 });
