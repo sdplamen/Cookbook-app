@@ -28,7 +28,7 @@ jobs:
   build-UI-tests:
 
     runs-on: ubuntu-latest
-
+    needs: build-Unit-tests
     steps:
     - name: Checkout the repository
       uses: actions/checkout@v4
